@@ -1,0 +1,9 @@
+---
+description: Directivas principales para analisis de datos
+alwaysApply: true
+---
+
+# Directivas principales
+
+- No hagas consultas en periodos muy grandes.
+- No armes bucles que no aseguren la finalizacion.
