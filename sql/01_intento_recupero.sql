@@ -14,7 +14,16 @@ faltas_por_pedido AS (
   JOIN order_items oi
     ON oi.order_id = o.order_id
    AND oi.pos_id = o.pos_id
-  WHERE oi.qty_requested > oi.qty_purchased
+  JOIN points_of_sale pos
+    ON pos.id = o.pos_id
+  JOIN clients c
+    ON c.id = pos.client_id
+  WHERE o.status_id = 2
+    AND c.is_demo = 0
+    AND c.deleted_at IS NULL
+    AND pos.deleted_at IS NULL
+    AND oi.qty_requested > 0
+    AND oi.qty_requested > oi.qty_purchased
   GROUP BY 1, 2, 3
 ),
 compras_posteriores AS (
@@ -26,7 +35,16 @@ compras_posteriores AS (
   JOIN order_items oi
     ON oi.order_id = o.order_id
    AND oi.pos_id = o.pos_id
-  WHERE oi.qty_purchased > 0
+  JOIN points_of_sale pos
+    ON pos.id = o.pos_id
+  JOIN clients c
+    ON c.id = pos.client_id
+  WHERE o.status_id = 2
+    AND c.is_demo = 0
+    AND c.deleted_at IS NULL
+    AND pos.deleted_at IS NULL
+    AND oi.qty_requested > 0
+    AND oi.qty_purchased > 0
 ),
 pedido_con_intento AS (
   SELECT
