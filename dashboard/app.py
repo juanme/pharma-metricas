@@ -124,7 +124,7 @@ def main():
 
     # --- Punto 3: Timing de recuperación ---
     st.header("3. Timing de recuperación")
-    con_recompra = df[df["reintento_reposicion"] == 1].dropna(subset=["bucket_timing_recompra"])
+    con_recompra = df[df["compra_efectiva"] == 1].dropna(subset=["bucket_timing_recompra"])
     con_recompra = con_recompra[con_recompra["bucket_timing_recompra"].astype(str).str.len() > 0]
     if len(con_recompra):
         order_bucket = ["< 6 h", "6-12 h", "12-24 h", "24-48 h", "48 h+"]
@@ -132,12 +132,12 @@ def main():
         fig3 = px.bar(
             x=dist.index,
             y=dist.values,
-            title="Distribución: tiempo hasta recompra",
+            title="Distribución: tiempo hasta recompra (compra efectiva)",
             labels={"x": "Bucket", "y": "Cantidad"},
         )
         st.plotly_chart(fig3, use_container_width=True)
     else:
-        st.info("No hay datos de timing (recompras con bucket).")
+        st.info("No hay datos de timing (compras efectivas con bucket).")
 
     # --- Punto 4: Repetición de faltas por producto ---
     st.header("4. Repetición de faltas por producto")
