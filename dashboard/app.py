@@ -99,6 +99,7 @@ def main():
             "tasa": "tasa_recuperadas_pct",
         }
     )
+    by_tipo = by_tipo.reset_index().rename(columns={"tipo_producto": "tipo_producto"})
     st.dataframe(by_tipo, use_container_width=True, hide_index=True)
     fig2 = px.bar(
         by_tipo.reset_index(),
