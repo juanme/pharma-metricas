@@ -88,7 +88,7 @@ def main():
         st.metric("Tasa recuperadas", f"{tasa_recup:.1f}%")
 
     by_tipo = df.groupby("tipo_producto", dropna=False).agg(
-        total=("compra_efectiva", "count"),
+        total=("compra_efectiva", "size"),
         recuperadas=("compra_efectiva", lambda s: (s == 1).sum()),
     ).assign(tasa=lambda x: (x["recuperadas"] / x["total"] * 100).round(1))
     st.subheader("Por tipo de producto")
