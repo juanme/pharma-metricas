@@ -9,7 +9,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Ruta por defecto al CSV (carpeta padre del dashboard)
-DEFAULT_CSV = os.path.join(os.path.dirname(__file__), "..", "202602041012.csv")
+DEFAULT_CSV = os.path.join(os.path.dirname(__file__), "..", "faltas_202602041548.csv")
 DATA_CSV = os.path.join(os.path.dirname(__file__), "data", "faltas_recompra.csv")
 
 
