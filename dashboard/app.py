@@ -79,23 +79,35 @@ def main():
     total_faltas = len(df)
     recuperadas = (df["compra_efectiva"] == 1).sum()
     tasa_recup = (recuperadas / total_faltas * 100) if total_faltas else 0
-    c1, c2, c3 = st.columns(3)
+    ean_reintentadas = (df["reintento_reposicion"] == 1).sum()
+    tasa_reintento_ean = (ean_reintentadas / total_faltas * 100) if total_faltas else 0
+    c1, c2, c3, c4, c5 = st.columns(5)
     with c1:
-        st.metric("Total faltas", f"{total_faltas:,}")
+        st.metric("Total faltas (EAN)", f"{total_faltas:,}")
     with c2:
-        st.metric("Faltas recuperadas (compra efectiva)", f"{recuperadas:,}")
+        st.metric("EAN reintentados", f"{ean_reintentadas:,}")
     with c3:
+        st.metric("Tasa reintentados", f"{tasa_reintento_ean:.1f}%")
+    with c4:
+        st.metric("Faltas recuperadas (compra efectiva)", f"{recuperadas:,}")
+    with c5:
         st.metric("Tasa recuperadas", f"{tasa_recup:.1f}%")
 
     by_tipo = df.groupby("tipo_producto", dropna=False).agg(
         total=("compra_efectiva", "size"),
+        reintentadas=("reintento_reposicion", lambda s: (s == 1).sum()),
         recuperadas=("compra_efectiva", lambda s: (s == 1).sum()),
-    ).assign(tasa=lambda x: (x["recuperadas"] / x["total"] * 100).round(1))
+    ).assign(
+        tasa_reintento=lambda x: (x["reintentadas"] / x["total"] * 100).round(1),
+        tasa=lambda x: (x["recuperadas"] / x["total"] * 100).round(1),
+    )
     st.subheader("Por tipo de producto")
     by_tipo = by_tipo.rename(
         columns={
             "total": "faltas_totales",
+            "reintentadas": "faltas_reintentadas",
             "recuperadas": "faltas_recuperadas",
+            "tasa_reintento": "tasa_reintentadas_pct",
             "tasa": "tasa_recuperadas_pct",
         }
     )
