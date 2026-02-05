@@ -8,8 +8,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Ruta por defecto al CSV (carpeta padre del dashboard)
-DEFAULT_CSV = os.path.join(os.path.dirname(__file__), "..", "faltas_202602041548.csv")
+CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "csv")
 DATA_CSV = os.path.join(os.path.dirname(__file__), "data", "faltas_recompra.csv")
 
 
@@ -22,22 +21,37 @@ def load_data(path: str) -> pd.DataFrame:
     return df
 
 
+def list_csv_files(csv_dir: str) -> list:
+    if not os.path.isdir(csv_dir):
+        return []
+    files = [f for f in os.listdir(csv_dir) if f.lower().endswith(".csv")]
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(csv_dir, f)), reverse=True)
+    return files
+
+
 def main():
     st.set_page_config(page_title="Faltas y Reposición", layout="wide")
     st.title("Dashboard — Faltas y Reposición")
     st.caption("Métricas 1, 2, 3, 4 y 6 — Validación de impacto")
 
-    # Cargar CSV: ruta por defecto o subida
-    csv_path = DEFAULT_CSV if os.path.isfile(DEFAULT_CSV) else (DATA_CSV if os.path.isfile(DATA_CSV) else None)
+    # Cargar CSV: listado en directorio o subida
+    csv_files = list_csv_files(CSV_DIR)
+    selected_csv = None
+    if csv_files:
+        selected_csv = st.sidebar.selectbox("CSV disponibles", csv_files, index=0)
     uploaded = st.sidebar.file_uploader("Subir CSV de faltas/recompra", type=["csv"])
     if uploaded:
         df = load_data(uploaded)
         st.sidebar.success(f"Filas cargadas: {len(df):,}")
-    elif csv_path:
+    elif selected_csv:
+        csv_path = os.path.join(CSV_DIR, selected_csv)
         df = load_data(csv_path)
-        st.sidebar.success(f"CSV por defecto: {len(df):,} filas")
+        st.sidebar.success(f"CSV seleccionado: {selected_csv} ({len(df):,} filas)")
+    elif os.path.isfile(DATA_CSV):
+        df = load_data(DATA_CSV)
+        st.sidebar.success(f"CSV por defecto (fallback): {len(df):,} filas")
     else:
-        st.warning("No hay CSV. Usá el selector para subir un archivo o colocá el CSV en la carpeta padre como `202602041012.csv` o en `dashboard/data/faltas_recompra.csv`.")
+        st.warning("No hay CSV. Colocá archivos en la carpeta `csv/` del proyecto o subí un archivo desde el panel.")
         st.stop()
 
     # Filtros opcionales
@@ -78,6 +92,13 @@ def main():
         recuperadas=("compra_efectiva", lambda s: (s == 1).sum()),
     ).assign(tasa=lambda x: (x["recuperadas"] / x["total"] * 100).round(1))
     st.subheader("Por tipo de producto")
+    by_tipo = by_tipo.rename(
+        columns={
+            "total": "faltas_totales",
+            "recuperadas": "faltas_recuperadas",
+            "tasa": "tasa_recuperadas_pct",
+        }
+    )
     st.dataframe(by_tipo, use_container_width=True, hide_index=True)
     fig2 = px.bar(
         by_tipo.reset_index(),

@@ -2,12 +2,12 @@
 -- Faltas y recompra (mismo POS) — para Validación de impacto puntos 1 a 4
 -- =============================================================================
 -- Incluye TODAS las faltas del periodo (con y sin recompra).
--- Recompra = primera vez que el EAN reaparece en otro pedido del mismo POS (ventana 10 días).
+-- Recompra = primera vez que el EAN reaparece en otro pedido del mismo POS (ventana 3 días).
 -- Columnas para: reintento (1), tasa recuperadas (compra_efectiva), timing (horas/bucket), repetición (veces_falta_antes).
 --
 -- CAMBIAR A MANO:
 --   - FECHA_INICIO y FECHA_FIN en todos los WHERE / subconsulta (periodo de pedidos con falta).
---   - Los "10" en DATE_ADD (ventana de días para recompra).
+--   - Los "3" en DATE_ADD (ventana de días para recompra).
 -- =============================================================================
 
 SELECT
@@ -97,7 +97,7 @@ LEFT JOIN (
         ON o_recompra_inner.point_of_sale_id = o_falta_inner.point_of_sale_id
         AND o_recompra_inner.id <> os_inner.order_id
         AND o_recompra_inner.created_at > o_falta_inner.created_at
-        AND o_recompra_inner.created_at <= DATE_ADD(o_falta_inner.created_at, INTERVAL 10 DAY)
+        AND o_recompra_inner.created_at <= DATE_ADD(o_falta_inner.created_at, INTERVAL 3 DAY)
         AND o_recompra_inner.status_id = 2
     INNER JOIN order_products op_inner
         ON op_inner.order_id = o_recompra_inner.id
