@@ -103,9 +103,9 @@ def main():
     fig2 = px.bar(
         by_tipo.reset_index(),
         x="tipo_producto",
-        y="tasa",
+        y="tasa_recuperadas_pct",
         title="Tasa de faltas recuperadas por tipo",
-        labels={"tipo_producto": "Tipo producto", "tasa": "Tasa (%)"},
+        labels={"tipo_producto": "Tipo producto", "tasa_recuperadas_pct": "Tasa (%)"},
     )
     st.plotly_chart(fig2, use_container_width=True)
 
