@@ -315,6 +315,14 @@ def main():
                 st.metric("% mismo archivo", f"{pct_same:.2f}%")
             st.caption("Fuente: CSV detallado.")
 
+        st.subheader("Cómo interpretar el resultado")
+        st.markdown(
+            "- Si **> 20%** de las canceladas reintentan con el mismo archivo en 24h: "
+            "fuerte evidencia de pérdida de trabajo; **guardar borrador** está justificado.\n"
+            "- Si **< 5%**: la mayoría no reintenta con el mismo archivo; "
+            "sería mejora de UX, pero **no prioridad crítica**."
+        )
+
 
 if __name__ == "__main__":
     main()
