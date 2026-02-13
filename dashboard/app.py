@@ -89,7 +89,10 @@ def main():
             st.warning("No hay CSV de comparativas. Colocá archivos en `csv/comparativas/` o subí uno desde el panel.")
             st.stop()
 
-        reintentos_files = list_csv_files(COMPARATIVAS_DIR)
+        reintentos_files = [
+            f for f in list_csv_files(COMPARATIVAS_DIR)
+            if "reintent" in f.lower()
+        ]
         selected_reintentos = None
         if reintentos_files:
             selected_reintentos = st.sidebar.selectbox(
@@ -266,6 +269,14 @@ def main():
         if df_reintentos is None or df_reintentos.empty:
             st.info("No hay CSV de reintentos cargado.")
         else:
+            required_cols = {"retry_24h_any", "retry_24h_same_file"}
+            missing_cols = required_cols.difference(df_reintentos.columns)
+            if missing_cols:
+                st.warning(
+                    "El CSV de reintentos no tiene las columnas esperadas: "
+                    + ", ".join(sorted(missing_cols))
+                )
+                return
             cancelled_total = len(df_reintentos)
             retry_24h_any = (df_reintentos["retry_24h_any"] == 1).sum()
             retry_24h_same = (df_reintentos["retry_24h_same_file"] == 1).sum()
