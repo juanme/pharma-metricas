@@ -3,6 +3,7 @@ Dashboard Faltas y Reposición — Validación de impacto (puntos 1, 2, 3, 4 y 6
 Lee el CSV exportado del query y muestra las métricas.
 """
 import os
+import json
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -10,6 +11,7 @@ import plotly.graph_objects as go
 
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "csv")
 COMPARATIVAS_DIR = os.path.join(CSV_DIR, "comparativas")
+COMPARATIVAS_RESUMEN = os.path.join(COMPARATIVAS_DIR, "resumen_reintentos.json")
 DATA_CSV = os.path.join(os.path.dirname(__file__), "data", "faltas_recompra.csv")
 
 
@@ -43,6 +45,11 @@ def load_comparativas_reintentos(path: str) -> pd.DataFrame:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
     return df
+
+
+def load_comparativas_resumen(path: str) -> dict:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def main():
@@ -106,6 +113,10 @@ def main():
             type=["csv"],
             key="comparativas_reintentos_upload",
         )
+        resumen = None
+        if os.path.isfile(COMPARATIVAS_RESUMEN):
+            resumen = load_comparativas_resumen(COMPARATIVAS_RESUMEN)
+
         if reintentos_uploaded:
             df_reintentos = load_comparativas_reintentos(reintentos_uploaded)
             st.sidebar.success(f"Reintentos cargados: {len(df_reintentos):,}")
@@ -266,8 +277,19 @@ def main():
         st.plotly_chart(fig_comp, use_container_width=True)
 
         st.header("Canceladas — Reintento con mismo archivo (24h)")
-        if df_reintentos is None or df_reintentos.empty:
-            st.info("No hay CSV de reintentos cargado.")
+        if resumen:
+            c1, c2, c3, c4 = st.columns(4)
+            with c1:
+                st.metric("Canceladas", f"{resumen.get('cancelled_total', 0):,}")
+            with c2:
+                st.metric("Reintento <= 24h", f"{resumen.get('retry_24h_any', 0):,}")
+            with c3:
+                st.metric("Reintento <= 24h mismo archivo", f"{resumen.get('retry_24h_same_file', 0):,}")
+            with c4:
+                st.metric("% mismo archivo", f"{resumen.get('pct_same_file_over_cancelled', 0):.2f}%")
+            st.caption("Fuente: resumen agregado.")
+        elif df_reintentos is None or df_reintentos.empty:
+            st.info("No hay resumen agregado ni CSV de reintentos cargado.")
         else:
             required_cols = {"retry_24h_any", "retry_24h_same_file"}
             missing_cols = required_cols.difference(df_reintentos.columns)
@@ -291,6 +313,7 @@ def main():
                 st.metric("Reintento <= 24h mismo archivo", f"{retry_24h_same:,}")
             with c4:
                 st.metric("% mismo archivo", f"{pct_same:.2f}%")
+            st.caption("Fuente: CSV detallado.")
 
 
 if __name__ == "__main__":

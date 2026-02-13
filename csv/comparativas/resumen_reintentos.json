@@ -1,0 +1,6 @@
+{
+  "cancelled_total": 1619,
+  "retry_24h_any": 1462,
+  "retry_24h_same_file": 299,
+  "pct_same_file_over_cancelled": 18.47
+}
