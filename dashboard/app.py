@@ -37,6 +37,14 @@ def load_comparativas(path: str) -> pd.DataFrame:
     return df
 
 
+def load_comparativas_reintentos(path: str) -> pd.DataFrame:
+    df = pd.read_csv(path)
+    for col in ("retry_24h_any", "retry_24h_same_file", "same_file"):
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df
+
+
 def main():
     st.set_page_config(page_title="Faltas y Reposición", layout="wide")
     st.title("Dashboard — Faltas y Reposición")
@@ -80,6 +88,30 @@ def main():
         else:
             st.warning("No hay CSV de comparativas. Colocá archivos en `csv/comparativas/` o subí uno desde el panel.")
             st.stop()
+
+        reintentos_files = list_csv_files(COMPARATIVAS_DIR)
+        selected_reintentos = None
+        if reintentos_files:
+            selected_reintentos = st.sidebar.selectbox(
+                "CSV reintentos (canceladas)",
+                reintentos_files,
+                index=0,
+                key="comparativas_reintentos",
+            )
+        reintentos_uploaded = st.sidebar.file_uploader(
+            "Subir CSV reintentos",
+            type=["csv"],
+            key="comparativas_reintentos_upload",
+        )
+        if reintentos_uploaded:
+            df_reintentos = load_comparativas_reintentos(reintentos_uploaded)
+            st.sidebar.success(f"Reintentos cargados: {len(df_reintentos):,}")
+        elif selected_reintentos:
+            reintentos_path = os.path.join(COMPARATIVAS_DIR, selected_reintentos)
+            df_reintentos = load_comparativas_reintentos(reintentos_path)
+            st.sidebar.success(f"CSV reintentos: {selected_reintentos} ({len(df_reintentos):,} filas)")
+        else:
+            df_reintentos = None
 
     if reporte == "Faltas y Reposición":
         # Filtros opcionales
@@ -229,6 +261,25 @@ def main():
             labels={"estado_personalizado": "Estado", "pct": "%"},
         )
         st.plotly_chart(fig_comp, use_container_width=True)
+
+        st.header("Canceladas — Reintento con mismo archivo (24h)")
+        if df_reintentos is None or df_reintentos.empty:
+            st.info("No hay CSV de reintentos cargado.")
+        else:
+            cancelled_total = len(df_reintentos)
+            retry_24h_any = (df_reintentos["retry_24h_any"] == 1).sum()
+            retry_24h_same = (df_reintentos["retry_24h_same_file"] == 1).sum()
+            pct_same = (retry_24h_same / cancelled_total * 100) if cancelled_total else 0
+
+            c1, c2, c3, c4 = st.columns(4)
+            with c1:
+                st.metric("Canceladas", f"{cancelled_total:,}")
+            with c2:
+                st.metric("Reintento <= 24h", f"{retry_24h_any:,}")
+            with c3:
+                st.metric("Reintento <= 24h mismo archivo", f"{retry_24h_same:,}")
+            with c4:
+                st.metric("% mismo archivo", f"{pct_same:.2f}%")
 
 
 if __name__ == "__main__":
