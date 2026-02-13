@@ -1,0 +1,788 @@
+"punto_de_venta","estado_personalizado","total_pedidos"
+"5 de febrero",compra concretada,2
+"5 de febrero",cancelada,1
+"5 de Mayo",cancelada,26
+"5 de Mayo",abandonada,7
+A Romano,compra concretada,14
+A Romano,abandonada,1
+Abasolo,compra concretada,2
+Administradores,compra concretada,14
+Administradores,cancelada,13
+Administradores,abandonada,6
+Aguas Frías,cancelada,27
+Aguas Frías,abandonada,2
+Aguas Frías,compra concretada,2
+Alberdi,compra concretada,9
+Alberdi,abandonada,1
+Allemma,compra concretada,12
+Almaba Farma,compra concretada,3
+Almaba Farma,cancelada,2
+Almaba Farma,abandonada,2
+Almacén,cancelada,2
+ALTAMIRANO,compra concretada,4
+Altos de Moreno,compra concretada,9
+Altos de Moreno,abandonada,1
+Alvear,compra concretada,10
+Arboledas,compra concretada,18
+Arboledas,cancelada,10
+Arieta,compra concretada,18
+Arieta,cancelada,1
+Arieta Perfu,compra concretada,2
+Arieta Perfu,cancelada,2
+Arieta Perfu,abandonada,1
+Auxiliares,cancelada,5
+Auxiliares,abandonada,4
+Azteca,compra concretada,12
+Azteca,cancelada,2
+Barrial,compra concretada,1
+Barrial,cancelada,1
+Belgrano La Franco,compra concretada,10
+Belgrano La Franco,abandonada,2
+Benavidez,compra concretada,10
+Benavidez,cancelada,2
+Benavidez,abandonada,1
+Bodrum,compra concretada,9
+Bodrum - Perfu,compra concretada,1
+Boulevard,cancelada,31
+Boulevard,compra concretada,18
+Boulevard,abandonada,2
+Boulogne,compra concretada,13
+Bustamante,compra concretada,6
+Bustamante,cancelada,1
+Caballito,compra concretada,13
+Carrera,cancelada,5
+Carrera,compra concretada,2
+Carrera,abandonada,1
+Caruso - Perfumeria,compra concretada,4
+Casa Aleman,cancelada,4
+Casa Aleman,compra concretada,3
+Casa Aleman,abandonada,2
+Castañeda,abandonada,1
+Castelli,compra concretada,6
+Castelli,abandonada,2
+Castelli,cancelada,1
+CASTORENA,abandonada,1
+CASTORENA,cancelada,1
+Catedral IV - Santiago del estero,compra concretada,1
+Catriel Saenz Peña,compra concretada,7
+Catriel Saenz Peña,cancelada,3
+Catriel Saenz Peña,abandonada,1
+Catriel Zurita,compra concretada,38
+Catriel Zurita,cancelada,14
+Catriel Zurita,abandonada,2
+CDIS,cancelada,1
+CEC San Nicolás,compra concretada,9
+CEC San Nicolás,cancelada,2
+CEDIFAR,compra concretada,13
+CEDIFAR,cancelada,12
+CEDIFAR,abandonada,3
+Cedis,compra concretada,7
+Cedis,cancelada,7
+Cedis,abandonada,4
+CEDIS Monterrey Vitau,compra concretada,24
+CEDIS Monterrey Vitau,cancelada,6
+Centro Historico,compra concretada,5
+Centro Historico,cancelada,2
+Centro Historico,abandonada,1
+Centro Sur,compra concretada,13
+Churubusco,compra concretada,3
+Churubusco,abandonada,2
+CLINISUMINISTROS SAS,cancelada,6
+CLINISUMINISTROS SAS,abandonada,5
+Club Campestre,compra concretada,7
+Club Campestre,abandonada,1
+Club Campestre,cancelada,1
+Coacalco,cancelada,7
+Coacalco,abandonada,3
+Coacalco,compra concretada,3
+Colon de Carhue,compra concretada,9
+Colon de Carhue,cancelada,6
+Colon de Carhue,abandonada,1
+Compra automatica,compra concretada,1
+Costamagna,abandonada,2
+Costamagna-TurnoMañana,compra concretada,7
+Costamagna-TurnoMañana,cancelada,1
+Costamagna-TurnoTarde,compra concretada,7
+Crovetto,compra concretada,16
+Crovetto,cancelada,9
+Crovetto,abandonada,6
+De miguel,compra concretada,24
+De miguel,abandonada,2
+De miguel,cancelada,2
+De prueba,compra concretada,1
+De prueba,cancelada,1
+De prueba,abandonada,1
+De prueba - No medicinales,cancelada,1
+Del Eje Suc Arcangel San Rafael,cancelada,4
+Del Eje Suc Arcangel San Rafael,compra concretada,3
+Del Eje Suc Arcangel San Rafael,abandonada,1
+Del Potosi,compra concretada,11
+Del Potosi,cancelada,1
+Del Provincia,compra concretada,9
+Del Pueblo,compra concretada,23
+Del Pueblo,cancelada,8
+Del Pueblo,abandonada,1
+Del Pueblo Express,compra concretada,22
+Del Pueblo Express,cancelada,3
+Del pueblo Perfumeria,compra concretada,12
+Deposito Anexo,compra concretada,4
+Deposito Anexo,cancelada,1
+Depósito Central,cancelada,5
+Depósito Central,abandonada,2
+Depósito Central,compra concretada,1
+Deposito Proveedores,compra concretada,1
+Digsa Medica,cancelada,14
+Digsa Medica,compra concretada,9
+Digsa Medica,abandonada,7
+Dimec,cancelada,1
+Diprogendi,abandonada,2
+Diprogendi,cancelada,1
+Distribuidora Ciudad Cuautemoc,cancelada,8
+Distribuidora Ciudad Cuautemoc,compra concretada,7
+Distribuidora Ciudad Cuautemoc,abandonada,3
+Distribuidora Ciudad Neza,cancelada,26
+Distribuidora Ciudad Neza,abandonada,9
+Distribuidora Ciudad Neza,compra concretada,5
+Distribuidora Ojo de agua,cancelada,16
+Distribuidora Ojo de agua,abandonada,10
+Distribuidora Ojo de agua,compra concretada,6
+Don Doctor,compra concretada,11
+Don Doctor,cancelada,5
+Dr. Elustondo,compra concretada,19
+Dr. Elustondo,abandonada,2
+Drogueria San Francisco,cancelada,20
+Drogueria San Francisco,compra concretada,6
+Drogueria San Francisco,abandonada,5
+Dromi Rosales,cancelada,6
+Dromi Rosales,compra concretada,1
+E. Farmac del Oeste - Perfu,compra concretada,1
+El Porvenir,cancelada,7
+El Porvenir,compra concretada,2
+Escobar,compra concretada,13
+Estanislao,compra concretada,10
+Estanislao - Perfu,compra concretada,2
+F. El Número Uno Lomas de Durazno,compra concretada,9
+F. El Número Uno Lomas de Durazno,abandonada,1
+F. El número uno ventura Puente,compra concretada,9
+F. El número uno ventura Puente,cancelada,2
+F. Guadalupe Jalisco,cancelada,3
+F. Guadalupe Jalisco,abandonada,2
+F. Iguales CEDIS,compra concretada,10
+F. Iguales CEDIS,cancelada,7
+F. Iguales CEDIS,abandonada,5
+"F. Isabel Actopan, Hgo.",compra concretada,20
+"F. Isabel Actopan, Hgo.",cancelada,4
+"F. Isabel Actopan, Hgo.",abandonada,3
+F. La Esperanza Matriz,compra concretada,14
+F. La Esperanza Matriz,cancelada,6
+F. La Esperanza Matriz,abandonada,4
+F. Matriz,compra concretada,3
+F. Matriz,cancelada,3
+F. San José Hospital,compra concretada,8
+F. San José Hospital,abandonada,2
+F. San José Hospital,cancelada,2
+F. San José Matriz,compra concretada,10
+F. San José Matriz,cancelada,8
+F. San José Matriz,abandonada,3
+Fabris,compra concretada,17
+Farma Huinco,compra concretada,12
+Farma Huinco,cancelada,2
+FARMA MAS,compra concretada,16
+FARMA MAS,cancelada,6
+Farma Plus  Fresno,compra concretada,11
+Farma Plus Avandaro,compra concretada,10
+Farma Plus Avandaro,cancelada,1
+Farma Plus Fontanas,compra concretada,11
+Farma y Más San Luis Acatlán,abandonada,2
+Farma y Más San Luis Acatlán,compra concretada,2
+Farma y Más San Luis Acatlán,cancelada,1
+Farmacia 01 Banco,cancelada,33
+Farmacia 01 Banco,compra concretada,12
+Farmacia 01 Banco,abandonada,5
+Farmacia 02 Puente,cancelada,15
+Farmacia 02 Puente,compra concretada,13
+Farmacia 02 Puente,abandonada,5
+Farmacia AgosPrueba,cancelada,1
+Farmacia alquimia MX,cancelada,6
+Farmacia alquimia MX,abandonada,2
+Farmacia Ancihuacuaro,cancelada,4
+Farmacia Ancihuacuaro,compra concretada,2
+Farmacia Andina,compra concretada,1
+Farmacia Andina,abandonada,1
+Farmacia Andina,cancelada,1
+Farmacia Añon,compra concretada,17
+Farmacia Bellafarma,compra concretada,16
+Farmacia Bellafarma,abandonada,7
+Farmacia Bellafarma,cancelada,3
+Farmacia Campos  de Alvarez,compra concretada,9
+Farmacia Canaria,compra concretada,10
+Farmacia Canaria,abandonada,5
+Farmacia Canaria,cancelada,3
+Farmacia Castelo La Estación,compra concretada,2
+Farmacia Castelo Suc Ajuchitlán,compra concretada,1
+Farmacia Catedral 1 - Parana,compra concretada,17
+Farmacia Catedral 1 - Parana,cancelada,1
+Farmacia Catedral 2 - Parana,compra concretada,47
+Farmacia Catedral 2 - Parana,cancelada,8
+Farmacia Catedral 2 - Parana,abandonada,4
+Farmacia Catedral 3 - Parana,compra concretada,8
+Farmacia Catedral 3 - Parana,abandonada,1
+Farmacia Catedral 3 - Parana,cancelada,1
+Farmacia Centro,compra concretada,7
+Farmacia Centro,abandonada,6
+Farmacia Centro,cancelada,4
+Farmacia Condor 1,compra concretada,8
+Farmacia Condor 2,compra concretada,1
+Farmacia Condor 3,compra concretada,1
+Farmacia Condor 4,compra concretada,8
+Farmacia Condor 4,cancelada,1
+Farmacia Costanera,compra concretada,6
+FARMACIA COYOACÁN,abandonada,15
+FARMACIA COYOACÁN,cancelada,7
+FARMACIA COYOACÁN,compra concretada,2
+Farmacia Cristal,compra concretada,18
+Farmacia Cristal,cancelada,9
+Farmacia Cristal,abandonada,1
+Farmacia Cristo Rey Progreso,compra concretada,29
+Farmacia Cristo Rey Progreso,cancelada,9
+Farmacia Cristo Rey Progreso,abandonada,6
+Farmacia Cuyo,compra concretada,24
+Farmacia Cuyo,cancelada,7
+Farmacia Cuyo,abandonada,4
+Farmacia de la Caridad,cancelada,3
+Farmacia de la Caridad,compra concretada,2
+Farmacia de la estacion,compra concretada,7
+Farmacia de la estacion,abandonada,1
+Farmacia del centro,cancelada,13
+Farmacia del centro,compra concretada,9
+Farmacia del centro,abandonada,1
+Farmacia del Norte,compra concretada,4
+Farmacia del Norte,abandonada,3
+Farmacia del Norte,cancelada,1
+Farmacia del pueblo,compra concretada,21
+Farmacia del pueblo,cancelada,3
+Farmacia Del Pueblo,abandonada,1
+Farmacia del Pueblo DC,cancelada,29
+Farmacia del Pueblo DC,compra concretada,3
+Farmacia del siglo S.A,compra concretada,16
+Farmacia del siglo S.A,abandonada,3
+Farmacia del siglo S.A,cancelada,1
+Farmacia del sol,compra concretada,10
+Farmacia del Valle,compra concretada,7
+Farmacia del Valle,abandonada,1
+Farmacia del Valle,cancelada,1
+Farmacia Demaria,compra concretada,38
+Farmacia Demaria,abandonada,8
+Farmacia Demaria,cancelada,5
+Farmacia Drdi,cancelada,26
+Farmacia Drdi,abandonada,12
+Farmacia Drdi,compra concretada,10
+Farmacia Dulac,compra concretada,7
+Farmacia Dulac,cancelada,2
+Farmacia El Inca,compra concretada,3
+Farmacia Extendeal México,cancelada,1
+Farmacia Farmalife Posadas,compra concretada,1
+Farmacia Farmalife Posadas,cancelada,1
+Farmacia Farmamas,compra concretada,8
+Farmacia Fenix,compra concretada,9
+Farmacia Fenix,cancelada,7
+Farmacia Fenix,abandonada,2
+Farmacia Fénix San Martin,compra concretada,4
+Farmacia Fénix San Martin,cancelada,3
+Farmacia Feresin,compra concretada,9
+Farmacia Gassmann Luciana,compra concretada,7
+Farmacia Gassmann Luciana,abandonada,1
+Farmacia Genesis CDMX,abandonada,3
+Farmacia Genesis CDMX,compra concretada,1
+Farmacia Genesis CDMX,cancelada,1
+Farmacia GM ATOTONILCO,abandonada,5
+Farmacia GM ATOTONILCO,compra concretada,2
+Farmacia GM ATOTONILCO,cancelada,2
+Farmacia Golf,compra concretada,29
+Farmacia Gomez Arrospide,compra concretada,9
+Farmacia Gomez Arrospide,cancelada,1
+Farmacia Gottero,compra concretada,1
+Farmacia Graciela Nuevo León,compra concretada,9
+Farmacia Graciela Nuevo León,cancelada,3
+Farmacia Graciela Nuevo León,abandonada,1
+Farmacia Guerrero Matriz,compra concretada,39
+Farmacia Guerrero Matriz,cancelada,24
+Farmacia Guerrero Matriz,abandonada,9
+Farmacia Itaembe,compra concretada,10
+Farmacia Itaembe,cancelada,4
+Farmacia Jana,compra concretada,10
+Farmacia Jana,abandonada,4
+Farmacia Jana,cancelada,3
+Farmacia La plaza,compra concretada,4
+Farmacia La plaza,cancelada,2
+Farmacia Mancini,compra concretada,31
+Farmacia Mancini,cancelada,8
+Farmacia Mancini,abandonada,1
+Farmacia Marin,cancelada,2
+Farmacia Marin,abandonada,1
+Farmacia Mas salud,abandonada,8
+Farmacia Mas salud,cancelada,7
+Farmacia Mas salud,compra concretada,2
+Farmacia MB,compra concretada,18
+Farmacia Medifarma,cancelada,1
+Farmacia Medifarma,compra concretada,1
+Farmacia Mubara,compra concretada,7
+Farmacia Mutual AMUR San Francisco,compra concretada,12
+Farmacia Mutual AMUR San Francisco,abandonada,1
+Farmacia MX San Pablo,compra concretada,4
+Farmacia MX San Pablo,cancelada,1
+Farmacia MX Tolimán,compra concretada,3
+Farmacia MX Tolimán,cancelada,3
+Farmacia Nueva Lima,compra concretada,53
+Farmacia Nueva Lima,abandonada,2
+Farmacia Nueva Lima,cancelada,1
+Farmacia Nueva San Juan,cancelada,2
+Farmacia Nueva San Juan,compra concretada,2
+Farmacia Nueva San Juan Ensueños,compra concretada,19
+Farmacia Nueva San Juan Ensueños,cancelada,3
+Farmacia Nueva San Juan Santa María,compra concretada,12
+Farmacia Obregon,compra concretada,10
+Farmacia Obregon,cancelada,9
+Farmacia Pasteur,compra concretada,7
+Farmacia Pasteur,cancelada,1
+Farmacia Rodriguez,compra concretada,17
+Farmacia Rosso Marcos,compra concretada,59
+Farmacia Rosso Marcos,abandonada,17
+Farmacia Rosso Marcos,cancelada,17
+Farmacia San Angel Hidalgo,compra concretada,10
+Farmacia San Angel Hidalgo,cancelada,8
+Farmacia San Angel Hidalgo,abandonada,6
+Farmacia San Ángel Medery,cancelada,53
+Farmacia San Ángel Medery,abandonada,18
+Farmacia San Ángel Medery,compra concretada,11
+Farmacia San Antonio,compra concretada,9
+Farmacia San Diego,cancelada,7
+Farmacia San Diego,compra concretada,2
+Farmacia San Diego,abandonada,1
+FARMACIA SAN JUDAS TADEO,compra concretada,8
+FARMACIA SAN JUDAS TADEO,cancelada,4
+FARMACIA SAN JUDAS TADEO,abandonada,2
+Farmacia Sellares,compra concretada,1
+FARMACIA SUPER ESTRELLA,compra concretada,9
+FARMACIA SUPER ESTRELLA,cancelada,1
+Farmacia Sur - Colon,compra concretada,17
+Farmacia Sur - Colon,abandonada,3
+Farmacia Sur - Colon,cancelada,2
+Farmacia Sur - Galileos Sur,compra concretada,9
+Farmacia Sur - Galileos Sur,cancelada,5
+Farmacia Sur - Mendeleiv,compra concretada,19
+Farmacia Teo - Pelotes,abandonada,4
+Farmacia Teo - Pelotes,cancelada,1
+Farmacia Varela,compra concretada,20
+Farmacia Varela,cancelada,4
+Farmacia Varela,abandonada,1
+Farmacia Vega,compra concretada,15
+Farmacia Yesi,cancelada,20
+Farmacia Yesi,compra concretada,20
+Farmacia Yesi,abandonada,18
+Farmacia Zamora,compra concretada,29
+Farmacia Zamora,cancelada,10
+Farmacias Bajío,compra concretada,2
+Farmacias Bajío,cancelada,1
+Farmacias Bajío,abandonada,1
+Farmacias Bell KM 80,cancelada,3
+Farmacias Bell Río Lagartos,cancelada,18
+Farmacias Bell Río Lagartos,abandonada,8
+Farmacias Bell Xcan,abandonada,1
+Farmacias Bell Xcan 2,abandonada,11
+Farmacias Bell Xcan 2,cancelada,6
+Farmacias Cuyo,cancelada,11
+Farmacias Cuyo,abandonada,3
+Farmacias Cuyo,compra concretada,2
+FARMACIAS DE ESPECIALIDAD DEL SUR,abandonada,10
+FARMACIAS DE ESPECIALIDAD DEL SUR,cancelada,7
+FARMACIAS DE ESPECIALIDAD DEL SUR,compra concretada,4
+Farmacias Guadalupana Valle,cancelada,10
+Farmacias Guadalupana Valle,compra concretada,3
+Farmacias Guadalupana Valle,abandonada,3
+FARMACIAS JOSEL,compra concretada,3
+FARMACIAS JOSEL,abandonada,3
+FARMACIAS LAGO,compra concretada,43
+FARMACIAS LAGO,cancelada,40
+FARMACIAS LAGO,abandonada,6
+Farmacias NOA,compra concretada,1
+Farmacias Tequisquiapan,cancelada,16
+Farmacias Tequisquiapan,compra concretada,7
+Farmacias Tequisquiapan,abandonada,3
+FARMACIAS VOLIM,cancelada,12
+FARMACIAS VOLIM,compra concretada,5
+FARMACIAS VOLIM,abandonada,5
+Farmagenezi,cancelada,2
+Farmagenezi,abandonada,1
+Farmagenezi,compra concretada,1
+Farmalife 1 CTES,compra concretada,4
+Farmalife 1 CTES,abandonada,1
+FARMALIFE 10 CTES,compra concretada,7
+FARMALIFE 10 CTES,cancelada,3
+FARMALIFE 10 CTES,abandonada,1
+FARMALIFE 11 CTES,compra concretada,2
+FARMALIFE 12 CTES,compra concretada,7
+Farmalife 16 corrientes,compra concretada,9
+Farmalife 17 Corrientes,compra concretada,2
+Farmalife 2 Corrientes,compra concretada,8
+Farmalife 2 resistencia,compra concretada,2
+Farmalife 2 resistencia,abandonada,1
+Farmalife 3 resistencia,compra concretada,6
+Farmalife 3 resistencia,abandonada,1
+Farmalife 3 resistencia,cancelada,1
+Farmalife 4 resistencia,compra concretada,3
+Farmalife 5 Corrientes,abandonada,6
+Farmalife 5 Corrientes,compra concretada,6
+Farmalife 5 Corrientes,cancelada,2
+Farmalife 6 Corrientes,compra concretada,3
+Farmalife 6 Corrientes,cancelada,1
+FARMALIFE 8  CTES,compra concretada,11
+Farmalife Hiper,compra concretada,11
+Farmalife Hiper,abandonada,2
+Farmalife Pellegrini,cancelada,15
+Farmalife Pellegrini,compra concretada,4
+Farmalife Pellegrini,abandonada,3
+Farmalife XX,compra concretada,7
+Farmalife XX,abandonada,1
+Farmamundo,compra concretada,1
+FARMAPRONTO  CEDIS,cancelada,4
+FARMAPRONTO  CEDIS,abandonada,4
+FARMAPRONTO  CEDIS,compra concretada,2
+Faro II,compra concretada,18
+Faro II,cancelada,4
+Fisher,compra concretada,2
+Flores,compra concretada,13
+Florida Oeste,compra concretada,8
+Florida Oeste,abandonada,2
+FNSJ Atenco,compra concretada,9
+FNSJ Atenco,cancelada,4
+FNSJ La Aurora,compra concretada,5
+FNSJ La Aurora,cancelada,2
+Garcia,compra concretada,8
+Garcia,abandonada,1
+Garcia,cancelada,1
+Gassmann,compra concretada,8
+Gassmann,cancelada,2
+GL Farma,compra concretada,17
+Granjas de Guadalupe,cancelada,6
+Granjas de Guadalupe,compra concretada,1
+Heredia,compra concretada,13
+Heredia,abandonada,1
+Inglesa Perfumeria,compra concretada,3
+Isla,compra concretada,5
+Izcalli,compra concretada,6
+Izcalli,cancelada,3
+Izcalli,abandonada,1
+Jalapa,compra concretada,2
+Jardines 1,compra concretada,8
+Jardines 1,cancelada,8
+Jardines 1,abandonada,2
+Jardines 2,cancelada,10
+Jardines 2,compra concretada,8
+Jilotepec Centro,cancelada,6
+Jilotepec Centro,compra concretada,3
+Juquilita,compra concretada,1
+Kevital Farma,compra concretada,13
+Kevital Farma,abandonada,2
+La Doce - PERFUMERIA,compra concretada,2
+La Plaza Central,compra concretada,17
+La Plaza Central,cancelada,4
+La Plaza Central - Perfu,compra concretada,4
+La Plaza Central - Perfu,cancelada,2
+LA SUIZO,abandonada,1
+La Villa,cancelada,10
+La Villa,abandonada,4
+La Villa,compra concretada,2
+Lacarra,compra concretada,17
+Lacarra,cancelada,1
+Lacarra,abandonada,1
+LADERA,compra concretada,1
+Lavalle,compra concretada,17
+Lavalle,abandonada,1
+Leandro schestakow,compra concretada,12
+Leandro schestakow,cancelada,1
+Libertad 15,cancelada,28
+Libertad 15,compra concretada,21
+Libertad 15,abandonada,7
+Logis Pharma,compra concretada,12
+Logis Pharma,cancelada,1
+Loma Verde,compra concretada,13
+Lombardo,cancelada,7
+Lombardo,compra concretada,4
+Luque,compra concretada,9
+Luque - Perfu,compra concretada,1
+Luque - Perfu,cancelada,1
+Maquinista savio,compra concretada,10
+Maquixco,compra concretada,5
+Maquixco,cancelada,1
+Mariano Escobedo,compra concretada,2
+Marsella,cancelada,4
+Marsella,abandonada,1
+Martinez 1,compra concretada,12
+Martinez 2,compra concretada,12
+Matriz,compra concretada,47
+Matriz,cancelada,28
+Matriz,abandonada,10
+Mazal Stim,compra concretada,9
+Mazal Stim,abandonada,3
+Mazal Stim,cancelada,2
+MERCADO,compra concretada,9
+MERCADO,cancelada,2
+MERCADO,abandonada,1
+Metepec 1,compra concretada,5
+Metepec 1,abandonada,2
+Metepec 1,cancelada,1
+MINA,compra concretada,6
+MINA,cancelada,4
+MM Pharma,cancelada,20
+MM Pharma,abandonada,16
+MM Pharma,compra concretada,7
+Monclus,abandonada,1
+Mundial Medicamentos,compra concretada,8
+Mundial Medicamentos,abandonada,6
+Mundial Medicamentos,cancelada,2
+Munro,compra concretada,18
+Munro,abandonada,2
+Murature,compra concretada,7
+Murature,abandonada,2
+Muzquiz,compra concretada,2
+Muzquiz,abandonada,1
+Naon Srl,compra concretada,17
+Naon Srl,abandonada,8
+Naveira,compra concretada,19
+Naveira,abandonada,1
+Newton,compra concretada,5
+NICOLAS ROMERO,cancelada,7
+NICOLAS ROMERO,abandonada,4
+NICOLAS ROMERO,compra concretada,3
+Nigromante,compra concretada,2
+Noya Bialet Masse,compra concretada,28
+Noya Bialet Masse,cancelada,4
+Noya Bialet Masse,abandonada,3
+Noya Cosquín,compra concretada,17
+Noya Cosquín,abandonada,2
+Noya Cosquín,cancelada,1
+Noya Parque Siquiman,compra concretada,18
+Noya Parque Siquiman,abandonada,2
+Noya Santa Maria,compra concretada,23
+Noya Santa Maria,abandonada,6
+Noya Santa Maria,cancelada,1
+Nueva Chenu,compra concretada,9
+Nueva Chenu - Perfu,compra concretada,1
+Nueva del Lib - Perfu,compra concretada,2
+Nueva del Libertador,compra concretada,17
+Nueva del Libertador,cancelada,1
+NUEVA TACUARI,compra concretada,10
+NUEVA TACUARI,abandonada,1
+NUEVA TACUARI,cancelada,1
+Nuevo Laredo,compra concretada,3
+Nuevo Laredo,abandonada,3
+Nuevo Milenio,compra concretada,16
+Nuevo Milenio - Perfu,compra concretada,2
+Oriente 229,compra concretada,5
+Oriente 229,cancelada,1
+Osvaldini,compra concretada,31
+Osvaldini,cancelada,7
+Osvaldini,abandonada,1
+Pachuca,cancelada,8
+Pachuca,compra concretada,5
+Pachuca,abandonada,3
+Palermo 1,compra concretada,8
+Palermo 2,compra concretada,13
+Palermo La Franco,compra concretada,9
+Palermo La Franco,cancelada,1
+Pasteur San Justo,compra concretada,8
+Pasteur San Justo,cancelada,3
+Pasteur San Justo,abandonada,1
+Pasteur San Justo - Perfu,compra concretada,1
+Perfumeria Catriel,compra concretada,2
+Perfumeria Catriel,abandonada,1
+PERFUMERIA GASSMANN,compra concretada,2
+PERFUMERIA GASSMANN,cancelada,1
+Plaza San Justo,compra concretada,16
+Plaza San Justo,abandonada,1
+Plaza San Justo,cancelada,1
+Plaza San Justo - Perfu,compra concretada,1
+Plenafarm,abandonada,16
+Plenafarm,cancelada,10
+Pompeo,cancelada,1
+Pompeo,compra concretada,1
+Punilla,compra concretada,12
+Punto Capilla I Ruta nacional 38km,compra concretada,4
+Punto Capilla I Ruta nacional 38km,cancelada,4
+Punto Capilla I Ruta nacional 38km,abandonada,2
+Punto Capilla II,compra concretada,4
+Punto Capilla II,cancelada,3
+Punto de venta de Juan,cancelada,2
+Punto de venta de Juan,compra concretada,1
+Punto Salud,abandonada,1
+QA Extendeal,compra concretada,4
+QA Extendeal,abandonada,2
+QA Extendeal,cancelada,2
+QA Extendeal Duplicado,cancelada,2
+Ramos Millán,compra concretada,4
+Ramos Millán,cancelada,2
+Ramos Millán,abandonada,1
+Rio Manzo,compra concretada,2
+Rioja,compra concretada,8
+Rioja,cancelada,3
+ROMA SUR,cancelada,3
+ROMA SUR,compra concretada,2
+Samogi,cancelada,13
+Samogi,abandonada,4
+Samogi,compra concretada,2
+San Agustin,compra concretada,5
+San Cristobal,compra concretada,4
+San Cristobal,abandonada,1
+San Felipe de Jesús,compra concretada,2
+San Fernando,compra concretada,12
+San Fernando,cancelada,1
+San Isidro,compra concretada,10
+San Martin 1,compra concretada,9
+San Martin 2,compra concretada,8
+San Martin 3,compra concretada,9
+San Martin 4,compra concretada,9
+San Martin 5,compra concretada,10
+San Martin 5,cancelada,1
+San Martin 6,compra concretada,16
+San Martin 7,compra concretada,9
+San Martin 7,cancelada,1
+San Martin 9,compra concretada,9
+San Pablo,compra concretada,2
+San Pablo,cancelada,1
+Sarmiento,compra concretada,10
+Shopping Catan,compra concretada,17
+Shopping Catan - Perfu,compra concretada,2
+Similia,compra concretada,1
+Similia 4614,compra concretada,5
+Similia Belgrano,compra concretada,14
+Similia Belgrano,cancelada,1
+SODHI FARMACIAS MATRIZ SAHUATOBA,cancelada,4
+SODHI FARMACIAS MATRIZ SAHUATOBA,compra concretada,3
+SODHI FARMACIAS MATRIZ SAHUATOBA,abandonada,1
+SODHI FARMACIAS PRIMO DE VERDAD,compra concretada,1
+SODHI FARMACIAS PRIMO DE VERDAD,abandonada,1
+SODHI FARMACIAS PRIMO DE VERDAD,cancelada,1
+Sofi 3,compra concretada,1
+Sofi 3,abandonada,1
+Sofi 4,compra concretada,1
+Solo off -QA (no modificar),cancelada,11
+Solo off -QA (no modificar),compra concretada,9
+Solo off -QA (no modificar),abandonada,2
+SOMA FIRST,compra concretada,22
+SOMA FIRST,cancelada,5
+SOMA FIRST,abandonada,3
+SUC PENAMILLER,abandonada,3
+SUC PENAMILLER,compra concretada,2
+Suc. De la Fuente,compra concretada,10
+Suc. De la Fuente,cancelada,4
+Suc. Río Culiacán,compra concretada,7
+Suc. Río Culiacán,cancelada,2
+Suc. Río Culiacán,abandonada,1
+Sucursal 2,cancelada,4
+Sucursal 2,compra concretada,3
+Sucursal 2,abandonada,1
+Sucursal 3,compra concretada,5
+Sucursal 39,compra concretada,17
+Sucursal 39,cancelada,1
+Sucursal Cedis,cancelada,52
+Sucursal Cedis,abandonada,24
+Sucursal Cedis,compra concretada,14
+Sucursal Centro,compra concretada,7
+Sucursal Centro,cancelada,6
+Sucursal Centro,abandonada,3
+Sucursal Mercado 01,cancelada,8
+Sucursal Mercado 01,abandonada,4
+Sucursal Mercado 01,compra concretada,3
+Sucursal mercado 02,abandonada,5
+Sucursal mercado 02,compra concretada,3
+Sucursal Norte,cancelada,4
+Sucursal Norte,compra concretada,3
+Sucursal Norte,abandonada,1
+Sucursal Periferico,compra concretada,3
+Sur 4,compra concretada,4
+Sur 4,abandonada,2
+Sur 4,cancelada,2
+Sv Farma 1,compra concretada,13
+Sv Farma 1,abandonada,9
+Sv Farma 1,cancelada,5
+Sv Farma 10,compra concretada,10
+Sv Farma 10,abandonada,1
+Sv Farma 2,compra concretada,12
+Sv Farma 2,cancelada,9
+Sv Farma 2,abandonada,2
+Sv Farma 3,compra concretada,12
+Sv Farma 3,abandonada,7
+Sv Farma 3,cancelada,3
+Sv Farma 4,compra concretada,11
+Sv Farma 4,abandonada,3
+Sv Farma 4,cancelada,1
+Sv Farma 5,compra concretada,12
+Sv Farma 5,cancelada,5
+Sv Farma 5,abandonada,1
+Sv Farma 6,compra concretada,13
+Sv Farma 6,abandonada,2
+Sv Farma 6,cancelada,1
+Sv Farma 7,compra concretada,13
+Sv Farma 7,abandonada,3
+Sv Farma 7,cancelada,1
+Sv Farma 8,compra concretada,12
+Sv Farma 8,cancelada,4
+Sv Farma 8,abandonada,3
+Sv Farma 9,compra concretada,12
+Sv Farma 9,abandonada,1
+Tecamac 4,cancelada,5
+Tecamac 4,compra concretada,4
+Tecamac Centro,compra concretada,9
+Tecamac Centro,cancelada,4
+Tecamac Presidencia,compra concretada,8
+Tecamac Presidencia,cancelada,6
+Tecamac Presidencia,abandonada,1
+Tecnológico,compra concretada,9
+Tecnológico,cancelada,1
+Teotihuacan,abandonada,3
+Teotihuacan,compra concretada,3
+Teotihuacan,cancelada,1
+Termas,abandonada,1
+Tezal,compra concretada,3
+Tezontepec,compra concretada,1
+Tlaco,cancelada,35
+Tlaco,compra concretada,18
+Tlaco,abandonada,17
+Tucuman,compra concretada,7
+Tucuman,cancelada,2
+Tucuman,abandonada,1
+Universidad,compra concretada,12
+Universidad,cancelada,3
+Universidad,abandonada,1
+Valemar,compra concretada,18
+Valemar,abandonada,2
+Valemar,cancelada,1
+Vantage Merlo,compra concretada,9
+Vantage Merlo,cancelada,1
+Verdux Ciudad Lago,compra concretada,10
+Verdux Ciudad Lago,cancelada,2
+Verdux Ciudad Lago,abandonada,1
+Verdux Oriente,compra concretada,4
+Verdux Oriente,cancelada,3
+Via Morelos,cancelada,5
+Via Morelos,compra concretada,3
+Vicente Lopez,compra concretada,13
+Villa del parque,compra concretada,13
+Villa Urquiza,compra concretada,14
+Virtual no ejecutar pedidos,cancelada,9
+Viveros,cancelada,3
+Viveros,abandonada,2
+Viveros,compra concretada,2
+Zákia,compra concretada,10
+Zákia,cancelada,1
+Zákia,abandonada,1
+Zaragoza,compra concretada,2
+Zera,compra concretada,9
+Zera,cancelada,2
+Zera,abandonada,1
+Zera - Perfu,compra concretada,1
+Zorich - PERFUMERIA,compra concretada,3
+Zucolillo,cancelada,2
+Zumpango,cancelada,9
+Zumpango,compra concretada,4
