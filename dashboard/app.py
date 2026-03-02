@@ -54,10 +54,20 @@ def load_comparativas_resumen(path: str) -> dict:
 
 def main():
     st.set_page_config(page_title="Dashboard", layout="wide")
-    reporte = st.sidebar.radio("Reporte", ["Faltas y Reposición", "Comparativas canceladas"])
+    reportes = ["Faltas y Reposición", "Comparativas canceladas"]
+    qp = st.query_params.get("reporte")
+    default_index = 0
+    if qp:
+        qp_val = qp[0].strip().lower()
+        if qp_val in ("comparativas", "comparativas-canceladas", "comparativas_canceladas"):
+            default_index = 1
+    reporte = st.sidebar.radio("Reporte", reportes, index=default_index)
     titulo = "Dashboard — Faltas y Reposición"
     if reporte == "Comparativas canceladas":
+        st.query_params["reporte"] = "comparativas"
         titulo = "Dashboard — Comparativas canceladas-reintentadas"
+    else:
+        st.query_params.pop("reporte", None)
     st.title(titulo)
     st.caption("Métricas 1, 2, 3, 4 y 6 — Validación de impacto")
 
