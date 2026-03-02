@@ -67,7 +67,7 @@ def main():
         st.query_params["reporte"] = "comparativas"
         titulo = "Dashboard — Comparativas canceladas-reintentadas"
     else:
-        st.query_params.pop("reporte", None)
+        st.query_params["reporte"] = "faltas"
     st.title(titulo)
     st.caption("Métricas 1, 2, 3, 4 y 6 — Validación de impacto")
 
