@@ -58,7 +58,8 @@ def main():
     qp = st.query_params.get("reporte")
     default_index = 0
     if qp:
-        qp_val = qp[0].strip().lower()
+        qp_val = qp[0] if isinstance(qp, list) else qp
+        qp_val = str(qp_val).strip().lower()
         if qp_val in ("comparativas", "comparativas-canceladas", "comparativas_canceladas"):
             default_index = 1
     reporte = st.sidebar.radio("Reporte", reportes, index=default_index)
