@@ -82,7 +82,10 @@ def main():
             st.warning("No hay CSV. Colocá archivos en la carpeta `csv/` del proyecto o subí un archivo desde el panel.")
             st.stop()
     else:
-        comp_files = list_csv_files(COMPARATIVAS_DIR)
+        comp_files = [
+            f for f in list_csv_files(COMPARATIVAS_DIR)
+            if "reintent" not in f.lower()
+        ]
         selected_comp = None
         if comp_files:
             selected_comp = st.sidebar.selectbox("CSV comparativas", comp_files, index=0)
@@ -238,6 +241,9 @@ def main():
             st.metric("Tasa abandono", f"{tasa_abandono:.1f}%")
     else:
         st.header("Comparativas — Resumen")
+        if "total_pedidos" not in df.columns or "estado_personalizado" not in df.columns:
+            st.warning("El CSV de comparativas no tiene las columnas esperadas: total_pedidos y estado_personalizado.")
+            return
         total = df["total_pedidos"].sum()
         canceladas = df.loc[df["estado_personalizado"] == "cancelada", "total_pedidos"].sum()
         abandonadas = df.loc[df["estado_personalizado"] == "abandonada", "total_pedidos"].sum()
