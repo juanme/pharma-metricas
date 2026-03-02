@@ -53,8 +53,11 @@ def load_comparativas_resumen(path: str) -> dict:
 
 
 def main():
-    st.set_page_config(page_title="Faltas y Reposición", layout="wide")
-    st.title("Dashboard — Faltas y Reposición")
+    st.set_page_config(page_title="Dashboard", layout="wide")
+    titulo = "Dashboard — Faltas y Reposición"
+    if reporte == "Comparativas canceladas":
+        titulo = "Dashboard — Comparativas canceladas-reintentadas"
+    st.title(titulo)
     st.caption("Métricas 1, 2, 3, 4 y 6 — Validación de impacto")
 
     reporte = st.sidebar.radio("Reporte", ["Faltas y Reposición", "Comparativas canceladas"])
