@@ -239,6 +239,19 @@ def main():
             st.metric("Total faltas", f"{total_faltas:,}")
         with c3:
             st.metric("Tasa abandono", f"{tasa_abandono:.1f}%")
+
+        st.subheader("Cómo interpretar los resultados")
+        st.markdown(
+            "- **Hay demanda latente que no se resuelve**: reintento alto (~59%) con recupero bajo (~2.9%).\n"
+            "- **Objetivo**: con recupero automático + compra automática de recupero + timing + visibilidad, "
+            "subir de **2.9% a 5–8%** ya sería un buen impacto.\n"
+            "- **Justificación**:\n"
+            "  - Las farmacias quieren reponer (59%).\n"
+            "  - El sistema hoy no las ayuda a lograrlo (2.9%).\n"
+            "  - La solución desbloquea una demanda existente.\n"
+            "  - Baja la carga cognitiva de recordar.\n"
+            "  - Agiliza un proceso que hoy es 100% manual."
+        )
     else:
         st.header("Comparativas — Resumen")
         if "total_pedidos" not in df.columns or "estado_personalizado" not in df.columns:
